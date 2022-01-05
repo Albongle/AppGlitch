@@ -10,9 +10,8 @@
 const contenedor = require("./scripts/modules/contenedor.js");
 const express = require("express");
 const app = new express();
-const PORT = 3000;
 const productos = new contenedor("./productos.txt");
-
+const port = 3000;
 
 app.get("/",(req,res)=>res.send("Api Alejandro Bongioanni"));
 
@@ -32,6 +31,6 @@ app.route("/productosRandom").get((req, res) => {
     .catch((error) => console.error(error.message));
 });
 
-app.listen(PORT, () => {
-  console.log(`App abierta en puesto ${PORT}`);
+app.listen(port, () => {
+  console.log(`App abierta ${port}`);
 });
