@@ -10,7 +10,7 @@
 const contenedor = require("./scripts/modules/contenedor.js");
 const express = require("express");
 const app = new express();
-const PORT = 8080;
+const PORT = 3000;
 const productos = new contenedor("./productos.txt");
 
 
