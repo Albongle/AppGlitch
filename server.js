@@ -7,7 +7,7 @@
 
 // Antes de iniciar el servidor, colocar en el archivo 'productos.txt' tres productos como en el ejemplo del desafío anterior.
 
-const contenedor = require("./modules/contenedor.js");
+const contenedor = require("./scripts/modules/contenedor.js");
 const express = require("express");
 const app = new express();
 const PORT = 8080;
